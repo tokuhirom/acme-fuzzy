@@ -1,8 +1,8 @@
 package Acme::Fuzzy;
-
 use strict;
 use warnings;
 our $VERSION = '0.01';
+
 use Carp ();
 use Text::Soundex ();
 use List::MoreUtils ();
@@ -85,21 +85,27 @@ __END__
 
 =head1 NAME
 
-Acme::Fuzzy -
+Acme::Fuzzy - fuzzy method resolution
 
 =head1 SYNOPSIS
 
-  use Acme::Fuzzy;
+    use Acme::Fuzzy;
+    use LWP::UserAgent;
+
+    my $ua = LWP::UserAgant->new;
+    $ua->geT('http://wassr.jp/');
 
 =head1 DESCRIPTION
 
-Acme::Fuzzy is
+Human makes typo! Perl's method resolution should more fuzzy!
 
 =head1 AUTHOR
 
 Tokuhiro Matsuno E<lt>tokuhirom jsdfkla gmail fsadkjl comE<gt>
 
 =head1 SEE ALSO
+
+L<perl>
 
 =head1 LICENSE
 

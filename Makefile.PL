@@ -2,7 +2,8 @@ use inc::Module::Install;
 name 'Acme-Fuzzy';
 all_from 'lib/Acme/Fuzzy.pm';
 
-# requires '';
+requires 'Class::Inspector' => '1.23';
+requires 'List::MoreUtils'  => '0.22';
 
 tests 't/*.t';
 author_tests 'xt';
